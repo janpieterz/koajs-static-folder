@@ -1,0 +1,17 @@
+{
+  "name": "koa-static-folder",
+  "version": "0.0.1",
+  "description": "Static file server based on a folder",
+  "main": "index.js",
+  "dependencies": {
+    "assert": "~1.1.1",
+    "debug": "~0.7.4",
+    "koa": "~0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan-Pieter Zoutewelle",
+  "license": "MIT"
+}
