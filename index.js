@@ -1,5 +1,4 @@
-var debug = require('debug')('koa-static-folder'),
-    send = require('koa-send'),
+var send = require('koa-send'),
     fs = require('fs');
 
 module.exports = serve;
@@ -17,11 +16,9 @@ function serve(root){
     if(!root) throw Error('Root must be defined.');
     if(typeof root !== 'string') throw TypeError('Path must be a defined string.');
     
-    debug('Static: "%s".', root);
     var rootStat = fs.statSync(root);
     if(!rootStat.isDirectory()) throw Error('Root should be a directory.');
     
-    debug('Root is a directory. Initializing static directory serving at "%s"',root);
     var finalFiles = walk(root);
     
     root = fs.realpathSync(root);
