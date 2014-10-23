@@ -27,7 +27,7 @@ function serve(root){
     return function* staticFolder(next){
         var file = finalFiles[this.path];
         if(!file) return yield * next;
-        return yield send(this, file, {root: __dirname});
+        return yield send(this, file, {root: process.cwd()});
     }
 }
 
