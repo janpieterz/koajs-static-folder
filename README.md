@@ -25,7 +25,10 @@ console.log('Koa server listening at port 8000');
   MIT
 
 ## Release log
+0.1.5 - Updated documentation slightly.
 
 0.1.4 - Updated documentation slightly.
+
 0.1.3 - Using procedd.cwd() instead of dirname fixing some bugs with different file locations and systems.
+
 0.1.2 - Removed unnecessary dependencies and fixed broken dependency.
