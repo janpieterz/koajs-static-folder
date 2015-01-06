@@ -4,7 +4,7 @@ Middleware for KoaJS to serve a folder as static files. Other implementations re
 
 ## Example
 ```js
-var serve = require('./'),
+var serve = require('koa-static-folder'),
     koa = require('koa'),
     app = koa();
 
