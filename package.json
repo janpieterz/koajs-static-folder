@@ -1,6 +1,6 @@
 {
   "name": "koa-static-folder",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Static file server based on a folder instead of a single file. Node needs to be restarted in order to work through file caching.",
   "main": "index.js",
   "dependencies": {
