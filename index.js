@@ -12,22 +12,24 @@ module.exports = serve;
  * @return {Function}
  * @api public
  */
-function serve(root){
+function serve(root, opts){
     if(!root) throw Error('Root must be defined.');
     if(typeof root !== 'string') throw TypeError('Path must be a defined string.');
-    
+    opts = opts || {};
+    opts.root = process.cwd();
+
     var rootStat = fs.statSync(root);
     if(!rootStat.isDirectory()) throw Error('Root should be a directory.');
-    
+
     var finalFiles = walk(root);
-    
+
     root = fs.realpathSync(root);
     if(!root) throw Error('Root must be a valid path.');
-    
+
     return function* staticFolder(next){
         var file = finalFiles[this.path];
         if(!file) return yield * next;
-        return yield send(this, file, {root: process.cwd()});
+        return yield send(this, file, opts);
     }
 }
 

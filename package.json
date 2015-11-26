@@ -1,6 +1,6 @@
 {
   "name": "koa-static-folder",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Static file server based on a folder instead of a single file. Node needs to be restarted in order to work through file caching.",
   "main": "index.js",
   "dependencies": {
@@ -14,7 +14,7 @@
   "author": "Jan-Pieter Zoutewelle",
   "license": "MIT",
   "repository" :
- { 
+ {
    "type" : "git",
    "url" : "https://github.com/janpieterz/koajs-static-folder"
  }
