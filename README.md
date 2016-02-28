@@ -1,5 +1,8 @@
 # koajs-static-folder
 
+[![Version](https://img.shields.io/npm/v/koa-static-folder.svg?style=flat-square)](https://www.npmjs.com/package/koa-static-folder)
+[![Downloads](https://img.shields.io/npm/dm/koa-static-folder.svg?style=flat-square)](https://www.npmjs.com/package/koa-static-folder)
+
 Middleware for KoaJS to serve a folder as static files. Other implementations require every file to be appointed individually (as far as I know). The software initializes at the startup of your application, so changes made in the underlying folders require a restart of your app.
 
 
